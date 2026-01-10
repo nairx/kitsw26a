@@ -3,5 +3,6 @@ function dispMessage(){
     // b=20
     // c=a+b
     //alert("Hello")
-    alert(document.getElementById("txtEmail").value)
+    // alert(document.getElementById("txtEmail").value)
+    lblMessage.innerHTML = document.getElementById("txtEmail").value
 }
