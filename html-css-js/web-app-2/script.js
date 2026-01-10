@@ -17,17 +17,36 @@ const products = [
     price: 70,
     imgUrl: "https://picsum.photos/id/3/300/300",
   },
+    {
+    name: "Product 4",
+    desc: "This is a sample description",
+    price: 40,
+    imgUrl: "https://picsum.photos/id/4/300/300",
+  },
+  {
+    name: "Product 5",
+    desc: "This is a sample description",
+    price: 20,
+    imgUrl: "https://picsum.photos/id/5/300/300",
+  },
+  {
+    name: "Product 6",
+    desc: "This is a sample description",
+    price: 40,
+    imgUrl: "https://picsum.photos/id/6/300/300",
+  },
 ];
 
 function showProducts() {
   let str = `<div class="row">`;
   products.map(e=>{
     str = str + `
-    <div>
+    <div class="box">
     <img src=${e.imgUrl}/>
     <h3>${e.name}</h3>
     <p>${e.desc}</p>
     <h5>${e.price}</h5>
+    <p><button>Add to cart</button></p>
     </div>
       `
   })

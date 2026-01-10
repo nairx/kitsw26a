@@ -1,3 +1,10 @@
-.row{
+.row {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    margin: 5px;
+    border: 1px gray solid;
 }
